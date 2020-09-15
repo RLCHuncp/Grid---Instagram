@@ -1,6 +1,40 @@
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/* HEADER */
+.header .container-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-search{
+    background: #fafafa;
+    width: 250px;
+    border-radius: 3px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dbdbdb;
+}
+.btn-search i{
+    color: #a5a7aa;
+    font-size: 12px;
+    font-weight: bold;
+}
+.btn-search input{
+    border: none;
+    background: #fafafa;
+}
+.btn-search input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #8e8e8e;
+    padding-left: 5px;
+    font-size: 13px;
 }
 .post-list{
     display: grid;
