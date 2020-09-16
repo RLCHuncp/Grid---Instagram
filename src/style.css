@@ -8,7 +8,7 @@ body{
 /* HEADER */
 .header .container-header{
     width: 100%;
-    max-height: 54px;
+    height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +242,41 @@ span{
 }
 
 @media screen and (max-width: 768px) {
+    .header .container-header{
+        height: 64px;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .image-logo{
+        width:250px ;
+    }
+    .btn-search{
+        margin: 0 80px;
+        display: none;
+    }
+    .btn-search i{
+        font-size: 15px;
+    }
+    ::placeholder{
+        padding-left: 3px;
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 0.5px;
+    }
+    .profile{
+        padding-left: 120px;
+    }
+    .profile-information button{
+        display: none;
+    }
+    .container-history figure{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -60px;
+    }
     .post-list{
         grid-gap: 3px;
+        margin-left: 400px;
+        grid-template-columns: repeat(2, minmax(150px, 350px));
     }
 }
